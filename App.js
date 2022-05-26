@@ -1,12 +1,35 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
+
+import MyComponent from './MyComponent';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
+
+      <Text style={styles.title}>My App!</Text>
+
+      <ScrollView>
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+      </ScrollView>
+
     </View>
   );
 }
@@ -14,8 +37,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#2a2a2a',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: 50
+  },
+  title: {
+    color: '#fff',
   },
 });
